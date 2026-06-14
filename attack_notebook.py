@@ -9,7 +9,9 @@ with open("attack.py", "wb") as f:
 
 print("attack.py written successfully.")
 
-# Create dummy submission.csv to satisfy Kaggle requirements if any
+# Create submission.csv
+# The evaluator will replace this, but we need it to exist as an output artifact
+# for the "Submit to Competition" button to appear or for the CLI to find it.
 df = pd.DataFrame({"Id": ["gpt_oss_public", "gpt_oss_private", "gemma_public", "gemma_private"], "Score": [0.0, 0.0, 0.0, 0.0]})
 df.to_csv("submission.csv", index=False)
-print("dummy submission.csv created.")
+print("submission.csv created.")
