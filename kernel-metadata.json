@@ -1,6 +1,6 @@
 {
-  "id": "hichambedrani/ai-agent-security-attack-submission",
-  "title": "AI Agent Security Attack Submission",
+  "id": "hichambedrani/ai-agent-security-robust-v2",
+  "title": "AI Agent Security Robust v2",
   "code_file": "attack_notebook.py",
   "language": "python",
   "kernel_type": "script",
