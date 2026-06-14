@@ -14,11 +14,10 @@ env = SandboxEnv(
     guardrail=Guardrail(),
 )
 atk = AttackAlgorithm({"max_turns": 20, "branch_batch": 32})
-# Running for 3 minutes for a solid test
-config = AttackRunConfig(time_budget_s=180, max_steps=10000)
+config = AttackRunConfig(time_budget_s=300, max_steps=20000)
 start_time = time.time()
 f = atk.run(env, config)
 duration = time.time() - start_time
-print(f"Final Smoke Test complete.")
+print(f"Final Stability Test complete.")
 print(f"Duration: {duration:.2f}s")
 print(f"Findings found: {len(f)}")
